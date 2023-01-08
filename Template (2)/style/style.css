@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:700|Oswald:400:700);
+
+::-webkit-scrollbar { 
+	background: #333;
+ 	width: 12px;
+}
+::-webkit-scrollbar-thumb {
+	background: rgba(59, 59, 59, 0.8);
+	box-shadow: inset -6px 1px 0 rgba(33 , 33 , 33 , .6);
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #333;
+}
+::-webkit-scrollbar-track {
+	padding: 2px;
+	box-shadow: inset 3px 3px 3px rgba(6, 80, 130, 0.35);
+	background:#FFF;
+	border-radius: 10px;
+} 
+  body{
+   margin: 0;
+   font-family:Tahoma;
+   background:url(../imges/background.jpg);
+   background-size: cover;}
+
+.clear{clear: both}
+ 
+.header{
+	background: rgba(0,0,0,0.83);
+	width:100%;
+	position: fixed;
+	 
+	
+}
+
+.nav h3 {
+	float: left;
+	margin: 0;
+	color: #fff;
+	margin-left: 20px
+}
+.nav  { 
+	display: inline-block;
+ 	height:50px;
+	line-height: 50px;
+ 
+}
+.nav ul{
+	margin:  0;
+	margin-left: 360px;
+	margin-right: 5PX;
+	float: left;
+}
+
+.nav ul li{	display: inline-block;
+	list-style: none;
+	width:250px auto;
+	margin-left:10px;
+	padding: 0 7px
+ 	  }
+ .nav ul li:hover{background:#ec008c}
+
+.nav ul li a {
+	list-style-type : none;
+	text-decoration: none;
+	font-size: 20px;
+	color: #fff; 
+}
+
+
+
+.about{
+    background-size: cover;
+    background-image: url(../imges/slide-b-bg.BMP);
+    width: 100%;
+    height:500px;
+}
+
+
+.about  p {padding-top:40px;padding-left:40px;padding-right: 40px;   font-size:25px;  color:#fff ;font-family: Tahoma;line-height: 1.7;text-align: center;margin: 0;}
+	
+  .about .content  button{background:#FD3693;border: none;width: 200px;height: 50px;text-align: center;border-radius:5px;margin: 0;color: #fff;font-size: 25px	}
+ .about  .content  button:hover{background: none;border:#FD3693 1px solid;margin: 0 }
+#post{width:950px;height:550px;text-align: center;margin: auto;border-radius:10px}
+
+.posts .part{
+	width:300px;
+	height: 400px;
+	background:   #ddd;
+	float: left;
+	margin-bottom:15px;
+	margin-right:10px ;
+	margin-top:15px ;
+	border-radius:5px;
+	padding: 3px;
+ }
+.posts .part img{width: 100%}
+ .posts .part button{width: 40%;height: 25px;background: #FD3693;border:none;color: #FFFFFF;font-size:15px } 
+.posts .part button:hover{background: none;border:#FD3693 1px solid;}
+#head1{background:#ddd;width:950px;height:550px;margin: auto;border-radius:10px}	
+.head { width:30%;height:220px;float:left;margin-left:90px;margin-right:100px;margin-bottom:50px;color: #000;margin-top: 10px}
+.head i {margin-right: 5px}
+.head h2{ padding-bottom: 7px;border-bottom:4px solid  }
+.mail{width:950px;height:550px;text-align: center;background-color: #F43AA2;margin: auto;border-radius:10px }
+.mail h1{font-family:"alfa-slab-one";color:#fff;}
+.Name{width: 500px;height: 30px;margin-bottom: 10px;border-radius:5px }
+.comment{width: 500px;height: 200px;border-radius:5px}
+form input {font-size: 20px;display:inline-block;outline: 0;padding-left: 10px  }
+.button{font-size: 30px;width: 100px;height: 50px;color: #fff; }
+form textarea{display:inline-block;outline: 0;padding-left: 10px;font-size:30px;   }
+
+form button{margin-top:20px;background:none ; width: 200px;height: 50px;text-align: center;border-radius:5px;color: #fff;font-size: 25px}
+
+.footer{width: auto;height: 170px;background:#272727;font-size:10px;color: #FFFFFF;
+position: relative;text-align: center}
+ 
+.footer #followedby{text-align:center;position: absolute;left: 305px;  } 
+.footer p{font-size: 15px;color: #636363; ;text-align:center; position: absolute;bottom: 0;left: 375px}
+.footer h3{margin-left: 0px;padding-top:18px}
+.footer ul a  {font-size:30px; text-decoration: none ;float: left;margin-right:15px}
+
+ 
+
+
+a .aa   {
+ 	color:#4862a3;
+	}
+
+a .ss   {
+ 	color: #db4437;
+	}
+
+a .ff   {
+ 	color:#0077b5;
+	}
+a .dd{color :#1a93de}
+.aa,.ss,.ff,.dd{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+ 	background: #fff;
+	text-align: center;
+}
+
+
+.aa{
+	border: 3.5px solid #4862a3;
+}
+
+.ss{
+	border: 3.5px solid  #db4437;
+}
+
+.ff{
+	border: 3.5px solid #0077b5 ;
+}
+.dd{
+	border: 3.5px solid  #1a93de ;
+}
+
+	 
+.aa:hover{background: #4862a3;color: #fff}
+.ss:hover{background: #db4437;color: #fff}
+.ff:hover{background: #0077b5;color: #fff}
+.dd:hover{background: #1a93de;color: #fff}

@@ -1,0 +1,329 @@
+// Style Slider
+
+// Slider Posts
+.slider-posts{
+  text-align: center;
+  padding-bottom: 50px;
+  .ta-slider-title{
+    font-size: 36px;
+    font-weight: bold;
+    color: #252525;
+    padding: 40px 0;
+  }
+  .ta-post-bottom{
+    padding: 14px 0;
+    @extend %bgWhite;
+    .ta-post-meta{
+      a {
+        @extend %text-uppercase;
+        @extend %color3;
+      }
+    }
+    .ta-post-title{
+      padding: 10px 0 0 0;
+      a {
+        color: #252525;
+        font-weight: bold;
+      }
+    }
+  }
+}
+.slider-products{
+  @extend .slider-posts ;
+  .ta-post-top{
+    position: relative;
+      .ta-overlay{
+      width:100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      background: rgba(0, 0, 0, .8);
+      transform: scale(0);
+      @include transition(1s);
+      padding: 50% 0;
+      .ta-icon{
+        @extend %colorWhite;
+        @extend %font-16;
+      }
+      .ta-button{
+        border: none;
+        outline: none;
+        padding: 5px 10px;
+        background: $color3;
+        @extend %colorWhite;
+        margin: 0 4px;
+        @extend %font-16;
+        @extend %text-uppercase;
+      }
+    }
+    &:hover .ta-overlay{
+      transform: scale(1);
+    }
+  }
+
+
+  .ta-post-bottom{
+    background: transparent;
+  }
+  .fa-star{
+    @extend %color3;
+    @extend %font-16;
+    margin: 15px 0;
+  }
+  h4{
+    @extend %font-16;
+    small{
+      color: #a7b3c1;
+      text-decoration: line-through;
+      margin-left: 8px;
+    }
+  }
+}
+
+
+// Style b
+.ta-carousel.ta-style-b{
+  margin-bottom: 20px;
+  .owl-carousel .item{
+    height: 540px;
+  }
+}
+
+// Style c
+.ta-carousel.ta-style-a{
+  margin: 0;
+  .owl-carousel .item{
+    max-height: 440px;
+  }
+}
+
+.ta-slider-home{
+  position: relative;
+  .item{
+    position: relative;
+    height: 540px;
+    img{
+      height: 100%
+    }
+    .ta-overlay{
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,.38);
+      }
+    }
+    .ta-overlay-meta{
+      margin-bottom: 15px;
+      span{
+        &:after{
+          content: '';
+          display: table-cell;
+          width: 50px;
+          height: 0;
+          border-top: 1px solid #FFFFFF;
+          position: relative;
+          bottom: 4px;
+        }
+        &:before{
+          content: '';
+          display: table-cell;
+          width: 50px;
+          height: 0;
+          border-top: 1px solid #FFFFFF;
+          position: relative;
+          bottom: 4px;
+        }
+      }
+      a {
+        color: #fff;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0;
+        line-height: normal;
+        padding: 4px 12px;
+        position: relative;
+        text-transform: uppercase;
+      }
+    }
+    .ta-overlay-inner{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-weight: 600;
+      width: 55%;
+      -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      -o-transform: translate(-50%,-50%);
+      transform: translate(-50%, -50%);
+    }
+    .ta-overlay-title{
+      font-size: 46px;
+      line-height: 1.2;
+      letter-spacing: -0.15rem;
+      text-transform: capitalize;
+      padding-bottom: 20px;
+      padding-top: 7px;
+      margin: 0;
+      a{
+        color: #fff;
+        font-weight: bold;
+
+      }
+    }
+    .ta-overlay-more{
+      margin-top: 15px;
+      a {
+        color: #fff;
+        padding: 8px 14px;
+        background: $color3;
+        text-transform: uppercase;
+        letter-spacing: -.7px;
+        @extend %font-14;
+        font-weight: normal;
+      }
+      .ta-icon{
+        margin-left: 5px
+      }
+    }
+  }
+  .owl-nav{
+    .customPrevBtn{
+      padding: 5px 10px;
+      display: inline-block;
+      border-radius: 50px;
+      border: 1px solid #fff;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin: 0 0 0 3%;
+      z-index: 1;
+      @include transition(.7s);
+      &:hover{
+        background: #fff;
+        @extend %color1;
+      }
+    }
+    .customNextBtn{
+      padding: 5px 10px;
+      display: inline-block;
+      border-radius: 50px;
+      border: 1px solid #fff;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      right:0;
+      margin: 0 3% 0 0;
+      z-index: 1;
+      @include transition(.7s);
+      &:hover{
+        background: #fff;
+        @extend %color1;
+      }
+    }
+  }
+}
+
+.ta-carousel.ta-style-c {
+  position: relative;
+  .item{
+    height: 317px;
+    img{
+      height: 100%;
+    }
+  }
+  .ta-overlay-inner{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 40px 20px 40px;
+    background-color: rgba(0, 0, 0, 0.65);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    @extend %colorWhite;
+  }
+  .ta-overlay-meta{
+    font-size: 11px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    a {
+      color: #ffffff;
+      background-color: $color3;
+      padding: 0 20px;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  .ta-overlay-title{
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    a{
+      @extend %colorWhite;
+    }
+  }
+  .owl-nav{
+    .customPrevBtn{
+      position: absolute;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      line-height: 50px;
+      text-align: center;
+      background-color: $color3;
+      @extend %colorWhite;
+      opacity: 0.6;
+      z-index: 2;
+      @include transition(.5s);
+      cursor: pointer;
+      &:hover{
+        opacity: 1;
+      }
+    }
+    .customNextBtn{
+      position: absolute;
+      top: 50%;
+      right: 0;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      line-height: 50px;
+      text-align: center;
+      background-color: $color3;
+      @extend %colorWhite;
+      opacity: 0.6;
+      z-index: 2;
+      @include transition(.5s);
+      cursor: pointer;
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+}

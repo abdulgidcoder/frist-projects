@@ -1,0 +1,100 @@
+.instagram-carousel{
+  margin: 40px 0 0;
+  position: relative;
+  .owl-carousel{
+   .item{
+      max-height: 150px;
+      img{
+        max-height: 100%;
+      }
+    }
+  }
+  .ta-instagram{
+    width: 324px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    margin-top: -17px;
+    margin-left: -160px;
+    font-weight: 700;
+    text-align: center;
+    z-index: 2;
+    a {
+      display: inline-block;
+      padding: 5px 20px;
+      @extend %colorWhite;
+      background-color: rgba(0, 0, 0, 0.5);
+      text-transform: uppercase;
+      font-size: 14px;
+      @include transition(.5s);
+      &:hover{
+        background: $color3;
+      }
+    }
+  }
+}
+
+.ta-footer {
+  background: #566676;
+  padding: 30px 0;
+  .ta-footer-top {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #a5b2c1;
+  }
+  .ta-footer-social {
+    @extend %center;
+    .ta-item{
+      margin: 0 25px;
+      a {
+        @extend %colorWhite;
+        @extend %font-12;
+        text-decoration: none;
+        text-transform: uppercase;
+        @include transition(.7s);
+        &:hover{
+          @extend %colorhover;
+        }
+        .ta-icon{
+          margin: 0 15px;
+        }
+      }
+    }
+  }
+
+  .ta-footer-bottom {
+    padding-top: 30px;
+    .ta-copyright{
+      display: inline-block;
+      p {
+        @extend %font-14;
+        @extend %colorWhite;
+        margin: 0;
+        a {
+          @extend %colorhover;
+          @extend %font-14;
+          font-weight: bold;
+          @include transition(.7s);
+          &:hover{
+            @extend %colorWhite;
+          }
+        }
+      }
+    }
+    .ta-footer-navbar{
+      float: right;
+      text-align: right;
+      display: inline-block;
+      @extend  %ta-clearfix;
+      .ta-item{
+        margin-right: 30px;
+        a{
+          @extend %text-uppercase;
+          @extend %font-12;
+          @extend %colorWhite;
+          letter-spacing: 3px;
+        }
+      }
+    }
+  }
+}

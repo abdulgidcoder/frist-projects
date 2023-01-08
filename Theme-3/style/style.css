@@ -1,0 +1,490 @@
+/*Css Document*/
+
+/*
+
+ Theme Name : Active Box.
+ Theme Url : Projects/Theme-3.
+ Theme Version : 1.0.
+ Theme Designer :Ahmed Abdulgid. 
+ Designer Url :https://www.linkedin.com/in/ahmedabdulgid.
+
+*/
+
+/*----------------------------------- Start Main Rulez -----------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+
+body{
+    font-family:'FontAwesome', Tahoma;
+    width: 100%;
+}
+
+.container {
+    width:830px; 
+    margin: auto
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase
+}
+
+a{
+    text-decoration: none;
+    display: block
+}
+
+ul {list-style: none}
+
+li {display: inline-block}
+
+section p{
+    font-size: 14px;    
+    color: #797279;
+    line-height: 20px
+}
+.fa {font-family: 'FontAwesome'}
+.clear{clear:both}
+
+/*----------------------------------- End Main Rulez -----------------------------------*/
+
+/*----------------------------------- Start Header-----------------------------------*/
+
+header{
+    width: 100%;
+    height: 580px;
+    background: url(../images/slider.jpg) fixed no-repeat;
+}
+
+header nav {
+    width:80%;
+    height: 105px;
+    margin: 0 auto;
+    border-bottom:1px solid #4e5168;
+}
+
+header nav h1{
+    width: 20%;
+    height: 100%;
+    line-height: 105px;
+    color: #66697e;
+    cursor: pointer;
+    float: left;
+    text-transform: uppercase;
+}
+
+nav h1 span{
+    color: #fff;
+    font-weight: normal;
+}
+
+nav .menu{
+     height: 100%;
+    float: right;
+    line-height: 105px;
+    margin-right: 0
+}
+
+
+nav ul li a{
+    color:#CBCBC7;
+    text-transform: uppercase;
+    font-size: 14px;
+ }
+
+nav ul li{
+     float: left;
+     margin-right: 15px;
+}
+
+header .container {
+    padding-top:6%
+}
+header .container h1 {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    font-weight: normal;
+}
+
+header .container p{
+    color: #fff;
+    text-align: center;
+    padding-top:5%;
+}
+
+header button {
+    width: 144px;
+    height: 34px;
+    background: #e84545;
+    font-size: 15px;
+    margin: 30px auto;
+    cursor: pointer;
+    display: block;
+    outline: none;
+    text-transform: uppercase;
+    border: none;
+    text-align: center;
+    color: #fff
+}
+
+/*----------------------------------- End Header -----------------------------------*/
+
+/*----------------------------------- Start Features -----------------------------------*/
+
+.features{
+    height: 500px ;
+    padding: 2% 0
+}
+
+.features section h3{
+    margin: 10px 0;
+
+}
+.features section{
+    width: 33%;
+    float: left;
+    text-align: center;
+    padding: 4%
+ }
+
+.features .fa {
+    font-size: 70px;
+    color: #e84545;
+    text-align: center
+}
+
+/*----------------------------------- End Features -----------------------------------*/
+
+/*----------------------------------- Start Portfolio -----------------------------------*/
+
+.portfolio{
+    width: 100%;
+}
+
+.portfolio .img{
+    width: 25%;
+	height: 248px;
+    float: left;
+    background: no-repeat;
+    border: 1px solid #ccc3bd;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio .img img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.portfolio .img .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(232, 69, 69, 0.9);
+    position:absolute;
+    top:0;
+    left: 0;
+    text-align: center;
+    opacity: 0;  
+    transition: opacity, 0.5s;  
+}
+.portfolio .img:hover img {
+    transform: scale(1.2);
+    transition: 0.5s;
+    
+}
+
+.portfolio .img:hover .overlay{opacity: 1;}
+
+.portfolio .overlay .over-text{
+    width: 100%;
+    height: 100%;
+    margin-top: 30%;
+    position: relative;
+}
+.portfolio .img .overlay h3{
+     color: #ccc3bd;
+     position: absolute;
+     top: -18%;
+     left: 29%;
+     transition: 0.5s;
+     
+}
+
+.portfolio .img .overlay:hover h3{
+    color: #ccc3bd;
+    position: absolute;
+    top: 0%;
+    left: 29%;
+    transition: 0.5s;
+}
+
+.portfolio .img .overlay p{
+     color: #fff;
+     position: absolute;
+     top: 30%;
+     left: 28%;
+     transition: 0.5s;  
+}
+
+.portfolio .img .overlay:hover p{
+    color: #fff;
+    position: absolute;
+    top: 12%;
+    left: 28%;
+    transition: 0.5s
+}
+
+/*----------------------------------- End Portfolio -----------------------------------*/
+
+/*----------------------------------- Start Characters -----------------------------------*/
+
+.characters{height: 500px}
+
+.characters section {
+    width: 24.5%;
+    float: left;
+    margin: 70px 2px
+}
+
+.characters section h3{
+    margin-top: 12px;
+    color: #2D3033
+}
+
+.characters section span{
+    display: block;
+    margin-bottom: 12px;    
+    color: #E84545
+}
+
+.characters ul{
+    width: 100%;
+    height: 35px;
+    margin: 5px 0
+}
+
+.characters ul li{
+    width: 35px;
+    height: 100%;
+    text-align: center;
+    line-height:30px;
+    border: 2px solid #f0f2f4;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -o-border-radius:3px;
+    border-radius:3px
+}
+
+.characters ul li:hover{
+    background: #E84545;
+    border: 2px solid #E84545
+}
+
+.characters ul li .fa{
+    color: #c6cacc
+}
+
+.characters ul li:hover .fa{color: #fff}
+
+/*----------------------------------- End Characters -----------------------------------*/
+
+/*----------------------------------- Start About -----------------------------------*/
+
+.about{
+    width:100% ;
+    height: 356px;
+    background: #53354a
+}
+
+.about ul {
+    width:100% ;
+    height: 100%;
+    position: relative;
+
+}
+.about li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+}
+
+.about ul li  p{
+    width: 95%;
+    height: 60%;
+    font-size:30px;
+    padding: 10%;
+    line-height:40px;
+    display: block
+}
+
+.about ul li .text > span{
+    margin: 8% 10% 0;
+    display: block
+}
+
+.bolt{
+    margin: 0 30%;
+ }
+
+.about .bolt span{
+    width: 15px;
+    height: 15px;
+    background: #755d6e;
+    border: 1px solid #755d6e;
+    border-radius: 50%;
+    float: left;
+    margin: 5px;
+}
+
+.about .bolt span:hover{
+    background: #fff;
+    cursor: pointer
+}
+
+.about .bolt .active {background: #fff}
+
+.about .img,.text {
+    width: 50%;
+    height: 100%;
+    background: #53354a
+}
+
+.about .img {
+    float: left;
+}
+
+.about .text {
+    float: right;
+    color: #fff;
+    
+}
+
+.about .layer-1 {
+     z-index: 1;
+     animation: images 10s ease-in-out infinite
+}
+
+.about .layer-2{ z-index: 0 }
+
+@keyframes images {
+     to {z-index: 0}
+}
+
+/*----------------------------------- End About -----------------------------------*/
+
+/*----------------------------------- Start Download -----------------------------------*/
+
+.download{
+    height: 200px;
+    text-align: center;
+    margin: 7% auto 0
+}
+
+.download h2{
+    color: #2D3033;
+    font-weight: normal
+}
+
+.download span {
+    display: block;
+    color: #2d3033;
+    font-weight: bold;
+}
+
+.download  button {
+    width: 200px;
+    height: 34px;
+    background: #e84545;
+    font-size: 15px;
+    margin: 30px auto 0 ;
+    cursor: pointer;
+    display: block;
+    outline: none;
+    text-transform: uppercase;
+    border: none;
+    text-align: center;
+    color: #fff
+}
+
+/*----------------------------------- End Download -----------------------------------*/
+
+/*----------------------------------- Start Footer -----------------------------------*/
+
+footer{
+    width: 100%; 
+    text-align: center;
+}
+
+footer .contact{
+    width: 100%;
+    height: 300px;
+    background: #3a3e64
+}
+
+footer .container section{
+    width: 30%;
+    height: 100px;
+    margin: 80px 12px ;
+    float: left;
+    text-align: center
+}
+
+footer .contact section h3{
+    color: #fff;
+    font-weight: normal;    
+    padding: 10px 0
+}
+
+footer.contact section span {color:#797279}
+
+footer .contact section  ul{
+    width: 100%;
+    height: 35px;
+    margin: 10px 0
+}
+
+footer .contact section ul li{
+    width: 35px;
+    height: 100%;
+    text-align: center;
+    line-height:30px;
+    border: 2px solid #fff
+}
+
+footer .contact section ul li:hover{
+    background: #E84545;
+    border: 2px solid #E84545
+}
+
+footer .contact section ul li .fa{color: #fff}
+
+footer .copyRight{
+    width: 100%; 
+    height: 100px;  
+    background: #313454;
+    padding: 30px 0;
+    border-top: 1px solid #525570;
+    
+}
+
+footer .copyRight p {display: inline}
+
+footer .copyRight .fa{color: #e84545}
+
+footer .copyRight span{color: #fff}
+
+/*----------------------------------- End Footer -----------------------------------*/
+
+

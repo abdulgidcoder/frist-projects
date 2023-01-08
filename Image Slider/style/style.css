@@ -1,0 +1,50 @@
+@charset "utf-8";
+ /* CSS Document */
+div{
+	width: 840px;
+	height: 360px;
+	overflow: hidden;
+	margin: auto
+	
+}
+
+ul{
+	list-style: none;
+ }
+
+ul li{
+	text-decoration: none;
+	float: left;
+	width:160px;
+	height: 360px;
+	display: block;
+	position: relative;
+	transition:2s;
+
+	
+}
+
+ul li img{
+	 width:640px; 
+	height: 360px
+}
+
+ul li a{
+	width: 850px;
+	height: 100%;
+	position: absolute;
+	bottom: -310px;
+	display: block;
+	color: #fff;
+	text-decoration: none;	float: left;
+	padding: 0 0 5px 15px 
+	
+  }
+
+ul:hover li{
+	width: 40px
+}
+ul li:hover  {
+	width: 640px;
+	
+}

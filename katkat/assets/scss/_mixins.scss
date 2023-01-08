@@ -1,0 +1,37 @@
+
+@mixin ta-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@mixin ta-item {
+  display: inline-block;
+}
+
+@mixin transition($r) {
+  -webkit-transition: all $r ease-in-out;
+  -moz-transition: all $r ease-in-out;
+  -o-transition: all $r ease-in-out;
+  transition: all $r ease-in-out;
+}
+@mixin border($c) {
+  border: 1px solid $c
+}
+
+@mixin ta-clearfix() {
+  &{
+    display: block;
+    clear: both;
+    content: "";
+  }
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+  &::before{
+    display: block;
+    clear: both;
+    content: "";
+  }
+}

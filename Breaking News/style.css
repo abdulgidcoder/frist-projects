@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */    
+.endnews{ 
+	margin:15px;
+ 	width: 967.1px;
+    height: 41px;
+ 	background: #f1f1f1;
+	line-height:41px;
+	box-shadow:  2px 2px 5px rgba(0,0,0,.5);
+ 
+}
+
+
+.endnews h2{
+ 	background:#ec008c;
+	color: #fff;	 
+ 	font-size:15px; 
+	width: 120px;
+	height: 41px;
+	line-height: 41px;
+ 	padding: 0 5px  ;
+	text-align: center;
+	margin: 0;
+	float: left;
+	z-index: 1;
+	position: relative
+	}
+
+.endnews h2:after{
+	content: "";
+	width: 0;
+	border: solid;
+	border-width: 20.75px;
+	border-color:  transparent transparent transparent #ec008c   ;
+ 	display: block;
+	position: relative;
+	left:125px;
+	top:-41.0px;
+ 
+}
+.endnews .breaking {
+ 	overflow: hidden;
+	height: 36px;
+	padding-left: 25px;
+  
+  	 
+}
+.endnews .breaking ul{
+ 	width: 800px;
+	height: 36px;
+	list-style: none;
+	margin: 0;
+ 	position: relative;
+	animation: breaking 40s ease-in-out infinite ;
+ 
+
+}
+
+
+.endnews .breaking ul li{
+	position: relative; 
+ 	height: 36px;
+	display: block;	 
+
+}  
+
+
+.endnews .breaking ul li a{
+	text-decoration: none;
+	color: #272727
+ }
+.endnews ul:hover{animation-play-state: paused}
+
+@keyframes breaking{
+	0%,5%{top:0}
+	10%,15%{top:-36px}
+	20%,25%{top:-72px}
+	30%,35%{top:-108px}
+	40%,45%{top:-144px}
+	50%,55%{top:-180px}
+	60%,65%{top:-216px}
+	70%,75%{top:-252px}
+	80%,85%{top:-288px}
+	90%,95%{top:-324px}
+	100%,105%{top:-360px}
+	110%,115%{top:-396px}
+}

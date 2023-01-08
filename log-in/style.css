@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background: #f1f1f1
+}
+
+ div{
+	width: 500px;
+	height:380px;
+	margin: 60px auto;
+	text-align: center;
+	background: #fff;
+ 
+ }
+
+
+div h2{
+ 	color: #249f1e;
+	padding-top:15px
+}
+
+
+ div form {
+ 
+ 	display:inline-block;
+
+   }
+
+
+ div input{
+	width: 450px;
+	height: 30px;
+	margin: 10px;
+	text-align: right;
+ }
+
+
+ div button{
+	width: 450px;
+	height:30px;
+	background:  #426aa8 ;
+	border: 0;
+	border-radius: 3px;
+	line-height: 30px;
+	color: #fff;
+	font-size: 15px;
+	position: relative;
+
+		
+}
+
+div .dd {background: #55bf4e} 
+
+
+
+div button a{
+	float: right;
+	padding: 0px 10px 0px 15px;
+	margin:0;
+	color: #fff; 
+	background: #395185;
+	text-decoration: none;
+	font-size: 23px;
+	position: absolute;
+	right: 0px;
+	top: 0;	
+	border-radius: 0 3px 3px 0 
+	
+}
+
+div p{
+  	text-align: center;
+	color: #b6b2b2
+  	 
+}
+
+
+ div.aa  { 
+	text-align: right;
+	margin: 25px;
+	color: #000
+    }
+
+
+div a {
+	text-decoration: none; 
+	color:#55bf4e	 
+	
+ }
+
+div .bb  {
+	float: right;
+	margin-right: 25px
+	}
+ 
+ 

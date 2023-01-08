@@ -1,0 +1,232 @@
+.ta-header{
+  @extend %ta-clearfix;
+  .ta-toggle{
+    display: none;
+  }
+  .ta-header-top{
+    padding: 12px 0;
+    border-bottom: 1px solid #dde4ec;
+    .ta-nav-top{
+      .ta-item{
+        margin-right: 15px;
+        a {
+          @extend %font-14;
+          @extend %color2 ;
+          @include transition(.7s);
+          &:hover {
+            @extend %color3;
+          }
+        }
+      }
+    }
+    .ta-social-top{
+      float: right;
+      @include ta-list;
+      .ta-item{
+        @include ta-item;
+        margin-right: 20px;
+        .ta-icon{
+          @extend %font-14;
+          @extend %color2 ;
+          @include transition(.7s);
+          &:hover{
+            @extend %color3;
+          }
+        }
+      }
+    }
+  }
+  .ta-header-middle {
+    .ta-logo {
+      padding: 70px 0;
+      text-align: center;
+    }
+  }
+  .ta-header-bottom {
+    position: relative; top: 0px; width: 100%; z-index: 9999;
+    margin: 0  auto 25px;
+    .ta-nav{
+    position: relative;
+    }
+    .ta-menu{
+      padding: 15px 0;
+    }
+    .ta-list {
+      text-align: center;
+      .ta-item {
+        margin-right: 30px;
+        &:last-child{
+          margin-right: 0;
+        }
+        a {
+          color: #293647;
+          @extend %text-uppercase;
+          @extend %font-12;
+          font-weight: 500;
+          letter-spacing: 1px;
+          .ta-icon {
+            @extend %font-12;
+            margin-left: 5px;
+            color: #83888e;
+            @include transition(.7s);
+          }
+          @include transition(.7s);
+          &:hover,
+          &:hover .ta-icon {
+            @extend %color3;
+          }
+        }
+        .ta-search-toggle{
+          border: none;
+          background: none;
+          outline: none;
+          cursor: pointer;
+        }
+      }
+    }
+    .ta-search-header{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: $colorWhite;
+      display: none;
+      .ta-input{
+        width: 100%;
+        height: 60px;
+        font-size: 14px;
+        padding: 0;
+        border: none;
+        background: 0 0;
+        border-radius: 0;
+      }
+      .ta-search-toggle{
+        width: 24px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        margin-top: -12px;
+        display: inline-block;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background: none;
+      }
+    }
+
+  }
+}
+.ta-menu-top{
+  background: #fff;
+}
+.border{
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.ta-header.ta-style-c {
+  padding: 30px 0 ;
+  .ta-logo{text-align: left;}
+  .ta-nav {
+    line-height: 3.5;
+    padding: 30px;
+    @extend %bgWhite;
+    .ta-item {
+      margin-right: 30px;
+      &:last-child{
+        margin-right: 0;
+      }
+      a {
+        color: #293647;
+        @extend %text-uppercase;
+        @extend %font-12;
+        font-weight: 500;
+        letter-spacing: 1px;
+        .ta-icon {
+          @extend %font-12;
+          margin-left: 5px;
+          color: #83888e;
+          @include transition(.7s);
+        }
+        @include transition(.7s);
+        &:hover,
+        &:hover .ta-icon {
+          @extend %color3;
+        }
+      }
+      .ta-search {
+        border: none;
+        background: none;
+      }
+    }
+  }
+}
+
+.ta-header.ta-style-d {
+  .ta-header-top{
+    .ta-list{
+      float: inherit;
+      text-align: center;
+    }
+  }
+  .ta-header-bottom{
+    .ta-social{
+      @include ta-list;
+      .ta-item{
+        @include ta-item;
+        margin-right: 20px;
+        line-height: 3.5;
+        .ta-icon{
+          @extend %font-16;
+          @extend %color2 ;
+          @include transition(.7s);
+          &:hover{
+            @extend %color3;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.ta-header.ta-style-e {
+  .ta-nav {
+    padding: 50px;
+  }
+  .ta-list{
+    .ta-logo{
+      text-align: center;
+    }
+    .ta-item {
+      margin-right: 10px;
+      line-height: 3.5;
+      &:last-child{
+        margin-right: 0;
+      }
+      a {
+        color: #293647;
+        @extend %text-uppercase;
+        @extend %font-12;
+        font-weight: 500;
+        letter-spacing: 1px;
+        @include transition(.7s);
+        &:hover,
+        &:hover .ta-icon {
+          @extend %color3;
+        }
+        .ta-icon {
+          @extend %font-12;
+          margin-left: 5px;
+          color: #83888e;
+          @include transition(.7s);
+        }
+      }
+      .ta-search {
+        border: none;
+        background: none;
+      }
+    }
+  }
+}

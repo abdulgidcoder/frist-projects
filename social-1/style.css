@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+body{background:#464646;
+font-family:tahoma}
+div{margin: 60px auto}
+a {text-decoration: none;font-size: 30px
+ }
+
+
+a .aa   {
+ 	color:#4862a3;
+	}
+
+a .ss   {
+ 	color: #db4437;
+	}
+
+a .ff   {
+ 	color:#0077b5;
+	}
+a .dd{color :#1a93de}
+a .gg{color : #f36f24}
+.aa,.ss,.ff,.dd,.gg{
+	border-radius:   50%;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+ 	background: #fff;
+	text-align: center;
+	transition: all 1s
+}
+
+
+.aa{
+	border:2px solid #4862a3;
+}
+
+.ss{
+	border:2px solid #db4437;
+}
+
+.ff{
+	border: 2px solid #0077b5 ;
+}
+.dd{
+	border: 2px solid #1a93de ;
+}
+.gg{
+	border: 2px solid #f36f24 ;
+}
+
+	 
+.aa:hover{background: #4862a3;color: #fff}
+.ss:hover{background: #db4437;color: #fff}
+.ff:hover{background: #0077b5;color: #fff}
+.dd:hover{background: #1a93de;color: #fff}
+.gg:hover{background: #f36f24;color: #fff}
+
+
+
+
+
+
+
+
+  	 

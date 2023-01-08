@@ -1,0 +1,99 @@
+/* 3.1 Content */
+.ta-main-content {
+  .ta-content{
+    .ta-article{
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  .ta-navigation{
+    text-align: center;
+    @extend %ta-clearfix;
+    position: relative;
+    bottom: 0;
+    .ta-list{
+      display: inline-block;
+			.ta-item{
+				padding: 6px 14px;
+				border: 1px solid #a5b2c1;
+				border-radius: 100%;
+				margin-right: 10px;
+        text-align: center;
+				@include transition(.7s);
+        cursor: pointer;
+				&:hover{
+					border-color: $color3;
+					background: $color3;
+				}
+				a {
+          @extend %font-14;
+					color: #a5b2c1;
+					@include transition(.7s);
+				}
+				&:hover a{
+					@extend %colorWhite;
+				}
+			}
+		}
+    .new, .old{
+      line-height: 3;
+      @extend %font-14;
+      @extend %text-uppercase;
+      & a{
+        color: #a5b2c1;
+        @include transition(.7s);
+      }
+      &:hover a{
+        @extend %color3;
+      }
+      .ta-icon{
+        margin: 0 8px;
+      }
+    }
+    .new{float: right;}
+    .old{float: left}
+  }
+}
+
+
+.ta-error {
+  padding: 100px;
+  .ta-error-container {
+    background: $colorWhite;
+    text-align: center;
+    color: #a7b3c1;
+    padding: 50px;
+    box-shadow: 0 0 30px #a7b3c1;
+    .ops {
+      font-size: 60px;
+    }
+    .namber {
+      display: inline-block;
+      font-size: 90px;
+    }
+    .content{
+      margin: 18px 0;
+    }
+
+    ul {
+      display: inline-block;
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 28px;
+      margin-left: 10px;
+    }
+    p {
+      color: #a7b3c1;
+      font-size: 18px;
+      margin-bottom: 25px
+    }
+    a {
+      @extend %font-16;
+      @extend %color3;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.slider{
+	width: 500px;
+	margin: auto;
+	overflow: hidden;
+
+}
+.slider ul{
+	width: 3000px;
+	list-style: none;
+	padding: 0;
+	position: relative;
+	animation: slider 15s ease-in-out infinite ;
+
+	
+ 
+}
+ .slider li{
+	 float: right;
+	position: relative
+ 
+	
+
+}
+
+.slider ul:hover{animation-play-state: paused}
+
+.slider img{
+	width: 500px;
+  }
+.slider ul li h2{
+	background: rgba(88,88,88,0.70);
+ 	position: absolute;
+	bottom:-15px;
+	padding: 10px;
+	width: 480px
+		
+}
+
+
+@keyframes slider {
+	5%,15%{right:0px }
+	20%,30%{right: 500px }
+	35%,45%{right: 1000px }
+	50%,60%{right: 1500px }
+	65%,75%{right: 2000px }
+	80%,90%{right: 2500px }
+}

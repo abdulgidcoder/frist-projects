@@ -1,0 +1,141 @@
+// Variables
+@import "variables";
+
+// Mixins
+@import "mixins";
+
+
+%ta-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+%ta-item {
+  display: inline-block;
+}
+
+.ta-container-fluid{
+  padding: 0
+}
+
+%ta-clearfix {
+  display: block;
+  clear: both;
+  content: "";
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+  &::before{
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+
+%color1{
+  color: $color1;
+}
+
+%color2{
+  color: $color2;
+}
+
+%color3{
+  color: $color3;
+}
+
+%colorhover{
+  color: $colorhover;
+}
+
+%colorWhite{
+  color:$colorWhite;
+}
+
+%Bg{
+  background: $colorBg;
+}
+
+%bgWhite{
+  background: $colorWhite
+}
+
+%center{
+  text-align: center;
+}
+
+%itemCenter{
+  align-items: center;
+}
+
+%font-12{
+  font-size: 12px
+}
+
+%font-14{
+  font-size: 14px
+}
+%font-16{
+  font-size: 16px
+}
+%text-uppercase{
+  text-transform: uppercase;
+}
+.no-sidebar .ta-sidebar{
+  display: none;
+}
+
+.ta-social-icon{
+  @extend %font-14;
+}
+.ta-post-meta {
+  @extend %font-12;
+}
+.ta-post-more{
+  @extend %font-12;
+}
+
+
+.ta-boxed {
+  .ta-header-top,
+  .ta-header-middle,
+  .ta-header-bottom,
+  .ta-slider-home,
+  .instagram-carousel,
+  .ta-footer {
+    width: 1140px;
+    margin: 0 auto
+  }
+  .ta-header-top,
+  .ta-header-middle,
+  .ta-header-bottom,
+  .ta-slider-home,
+  .instagram-carousel,
+  .ta-footer {
+    .ta-container {
+      padding: 0;
+    }
+  }
+}
+
+.ta-fullWidth {
+  width: inherit!important;
+
+}
+.ta-fullwidth .ta-container {
+  margin: 0 auto;
+}
+.ta-item {
+  &:last-child {
+    margin-right: 0!important;
+  }
+}
+
+
+// Accessibility
+@import "global/accessibility";
+
+// Typography
+@import "global/typography";
